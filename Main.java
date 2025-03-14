@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -36,8 +37,12 @@ public class Main {
                 System.out.println("Воскресенье");
                 break;
                 }
-
        */
+        //int s= 1;
+        // if (s<=1||s<=2||s<=3||s<=4||s<=5||s<=6||s<=7){
+
+        //   }
+
         //2)  Напишите программу, которая проверяет, какой месяц по номеру введен пользователем (1 — Январь, 2 — Февраль и т.д.) и выводит его название.
        /* Scanner scanner = new Scanner(System.in);
         System.out.print("Какой сегодня месяц : ");
@@ -177,7 +182,7 @@ public class Main {
         }
 
         */
-            //7)  Напишите программу, которая выводит название операционной системы в зависимости от введенного кода: 1 — Windows, 2 — Linux, 3 — macOS.
+        //7)  Напишите программу, которая выводит название операционной системы в зависимости от введенного кода: 1 — Windows, 2 — Linux, 3 — macOS.
         /*Scanner scanner = new Scanner(System.in);
         System.out.print(" код : ");
         int num2 = scanner.nextInt();
@@ -197,7 +202,7 @@ public class Main {
         }
 
          */
-            //8)  Напишите программу, которая по введенному возрасту (в годах) выводит категорию человека: "Ребенок", "Подросток", "Взрослый", "Пожилой".
+        //8)  Напишите программу, которая по введенному возрасту (в годах) выводит категорию человека: "Ребенок", "Подросток", "Взрослый", "Пожилой".
        /* Scanner scanner = new Scanner(System.in);
         System.out.print(" age : ");
         int num2 = scanner.nextInt();
@@ -207,6 +212,7 @@ public class Main {
                 break;
             case 1,2,3,4,5,6,7,8,9,10,11:
                 System.out.println("Ребенок");
+
                 break;
             case 12,13,14,15,16,17,18,19:
                 System.out.println("Подросток");
@@ -219,7 +225,7 @@ public class Main {
                 break;}
 
         */
-            //9)  Напишите программу, которая по введенному числу месяца (от 1 до 12) выводит сезон года: "Зима", "Весна", "Лето", "Осень".
+        //9)  Напишите программу, которая по введенному числу месяца (от 1 до 12) выводит сезон года: "Зима", "Весна", "Лето", "Осень".
         /* Scanner scanner = new Scanner(System.in);
         System.out.print(" число месяца : ");
         int num2 = scanner.nextInt();
@@ -242,7 +248,7 @@ public class Main {
         }
 
          */
-            //10) Напишите программу, которая по введенному коду валюты (USD, EUR, GBP) выводит название валюты на русском языке: "Доллар США", "Евро", "Британский фунт".
+        //10) Напишите программу, которая по введенному коду валюты (USD, EUR, GBP) выводит название валюты на русском языке: "Доллар США", "Евро", "Британский фунт".
        /* Scanner scanner = new Scanner(System.in);
         System.out.print(" Валюта : ");
         String  num2 = scanner.nextLine();
@@ -261,12 +267,143 @@ public class Main {
                 break;
 
         }
-
         */
+        Scanner scanner = new Scanner(System.in);
+        //1  Вывести числа от 10 до 1 в обратном порядке.
+//for (int i = 10; i >=1; i--) {
+        //          System.out.print( i+  " ");
+        //     }
+        //2  Вывести все нечётные числа от 1 до 50.
+        //   for (int i = 1; i <=50;i+=2){
+        //       System.out.print(i+ " ");}
+
+        //3  Посчитать сумму всех чётных чисел от 1 до N.
+        //  System.out.print("Введите число :");
+        //  int num= scanner.nextInt();
+        // int num1= 0;
+        // for (int i = 1; i <=num; i++) {
+        //    if(i%2==0){
+        //        num1=num1+i;
+        //    }//0=0+1
+        //}    //1=1+2
+        // System.out.print(num1);
+        //4  Найти количество чисел, кратных 5, в диапазоне от 1 до 100.
+        //for (int i = 1; i <=100 ; i++) {
+        //  if(i%5==0){
+        //    System.out.print(i+ " ");}
+        //  }
+        //5  Вывести квадраты чисел от 1 до 10.
+        //for (int i = 1; i <=10 ; i++) {
+        //    System.out.println(i+ "=" +i*i);
+        //}
+        //6  Вывести числа  от 1 до N.  Посчитать сколько там
+        //   -четных
+        //  System.out.print("Введите число : ");
+        // int x = scanner.nextInt();
+        //   for (int i = 1; i <=x ; i++) {
+        //     if (i % 2 == 0) {
+        //       System.out.print(i + " ");}
+        // }
+        //   -нечетных
+        //  System.out.print("Введите число : " );
+        //  int x = scanner.nextInt();
+        //  for (int i = 1; i <=x; i++) {
+        //      if(i%2>0){
+        //       System.out.print(i+ " ");
+        //    }
+        // }
+        //   -деляться без остатка на 5 и на 6
+        // System.out.print("Введите число : " );
+        // int x = scanner.nextInt();
+        //int y=0;
+        //for (int i = 1; i <=x; i++) {
+        //  if(i%5==0 && i%6==0){
+        //    System.out.print(i+" ");
+        //  }
+        // }
+        //   -деляться без остатка на 2 и на 3
+        //    System.out.print("Введите число : " );
+        //int x = scanner.nextInt();
+        //for (int i = 1; i <=x; i++) {
+        //if(i%2==0 && i%3==0){
+        //System.out.print(i+" ");}
+        // }
+
+        //   -деляться без остатка на 2 или на 10
+//         System.out.print("Введите число : " );
+//         int x = scanner.nextInt();
+//         for (int i = 1; i <=x; i++) {
+//           if(i%2==0 || i%10==0){
+//             System.out.print(i+" ");
+//         }
+//         }
+        //   -деляться без остатка на 2 или на 4
+        //    System.out.print("Введите число : " );
+        //  int x = scanner.nextInt();
+        //  for (int i = 1; i <=x; i++) {
+        //     if(i%2==0 || i%4==0){
+        //       System.out.print(i+" ");}
+        //}
+        //   -деляться без остатка на 7 и на 3
+        //   System.out.print("Введите число : " );
+        //  int x = scanner.nextInt();
+        // for (int i = 1; i <=x; i++) {
+        //   if(i%7==0 && i%3==0){
+        //     System.out.print(i+" ");}
+        //}
+        //7  Вывести числа от 1 до 100, которые делятся на 3 без остатка.
+//          for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0) {
+//                System.out.print(i + " ");
+//            }
+//        }
+        //8  Вывести сумму чисел от 1 до 50.
+//        int x=0;
+//        for (int i = 1; i <= 50; i++) {
+//                x=x+i;
+//            }System.out.print( x + " ");
+//
+//
+
+        //9  Вывести все числа от 1 до N в одну строку через пробел.
+//        System.out.print("Введте число :");
+//        int x = scanner.nextInt();
+//        for (int i = 1; i <=x; i++) {
+//            System.out.print(i +" ");
+//
+//        }
+        //10 Вывести произведение чисел от 1 до N.
+//        System.out.print("Введте число :");
+//        int x = scanner.nextInt();
+//        int y = 0;
+//        for (int i = 1; i <= x; i++) {
+//            y = i * i;
+//
+//        }System.out.print(y+" ");
+
+            //11 Найти количество чисел от 1 до N, которые делятся на 2 или 5.
+//        System.out.print("Введте число :");
+//        int x = scanner.nextInt();
+//        for (int i = 1; i <=x; i++) {
+//            if(i%2==0||i%5==0){
+//                System.out.print( i+" ");
+//            }
+//
+            //        };
+            //12 Вывести сумму чисел от 1 до N.
+//        System.out.print("Введте число :");
+//        int x = scanner.nextInt();
+//        int y =0;
+//        for (int i = 1; i <= x; i++) {
+//            y=i+i;
+//            }
+//        System.out.print(y);
 
 
     }
 }
+
+
 
 
 
